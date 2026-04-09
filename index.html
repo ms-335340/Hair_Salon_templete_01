@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!-- スマートフォンでも適切な横幅で表示するための基本設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier Hair | 家庭的な雰囲気のヘアーサロン</title>
+  <meta name="description" content="個人営業のヘアーサロン。家庭的な雰囲気で、幅広い年代の方が気軽に通えるやさしい空間です。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
+  <!-- CSSは /css/style.css を読み込む構成 -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- =========================
+       Header
+       既存レイアウトをできるだけ維持しつつ、
+       店名やナビの文言だけヘアーサロン用に変更
+  ========================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-main">Atelier Hair</span>
+        <span class="logo-sub">Private Hair Salon</span>
+      </a>
+
+      <nav class="site-nav" aria-label="ページ内ナビゲーション">
+        <ul>
+          <li><a href="#concept">CONCEPT</a></li>
+          <li><a href="#about">ABOUT SALON</a></li>
+          <li><a href="#features">FEATURES</a></li>
+          <li><a href="#owner">STYLIST</a></li>
+          <li><a href="#items">MENU</a></li>
+          <li><a href="#gallery">STYLE</a></li>
+          <li><a href="#access">ACCESS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- =========================
+         Hero
+         スライダー構造はほぼそのまま維持
+         背景画像だけヘアーサロン用のダミー画像に差し替え
+    ========================== -->
+    <section class="hero">
+      <div class="hero-slider" aria-label="ヘアーサロンの店内イメージスライダー">
+        <div class="hero-slide slide1 is-active"></div>
+        <div class="hero-slide slide2"></div>
+        <div class="hero-slide slide3"></div>
+        <div class="hero-slide slide4"></div>
+        <div class="hero-slide slide5"></div>
+      </div>
+
+      <button class="hero-arrow hero-arrow-prev" type="button" aria-label="前の画像">
+        <span aria-hidden="true">‹</span>
+      </button>
+      <button class="hero-arrow hero-arrow-next" type="button" aria-label="次の画像">
+        <span aria-hidden="true">›</span>
+      </button>
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow">個人営業だからこそ、ひとりひとりに丁寧に向き合えるサロン</p>
+        <h1>家族みんなで<br>通いやすい、やさしい美容室。</h1>
+        <p class="hero-lead">
+          家庭的な雰囲気のなかで、幅広い年代の方が気軽に通えるヘアーサロン。<br>
+          毎日の暮らしになじむ、扱いやすく心地よいヘアスタイルをご提案します。
+        </p>
+        <div class="hero-actions">
+          <a href="#items" class="btn btn-primary">メニューを見る</a>
+          <a href="#access" class="btn btn-secondary">アクセス</a>
+        </div>
+      </div>
+
+      <div class="hero-indicators" aria-label="ヘッダー画像切り替え">
+        <button class="indicator is-active" type="button" aria-label="1枚目の画像を表示" data-slide="0"></button>
+        <button class="indicator" type="button" aria-label="2枚目の画像を表示" data-slide="1"></button>
+        <button class="indicator" type="button" aria-label="3枚目の画像を表示" data-slide="2"></button>
+        <button class="indicator" type="button" aria-label="4枚目の画像を表示" data-slide="3"></button>
+        <button class="indicator" type="button" aria-label="5枚目の画像を表示" data-slide="4"></button>
+      </div>
+    </section>
+
+    <!-- =========================
+         Concept
+         テキスト差し替えのみで構造は最小限変更
+    ========================== -->
+    <section id="concept" class="section section-light fade-section">
+      <div class="container narrow">
+        <p class="section-label">CONCEPT</p>
+        <h2 class="section-title">気取らず通えて、安心して相談できるサロン。</h2>
+        <p class="section-text">
+          個人営業ならではの落ち着いた空気感を大切にしながら、
+          小さなお子さまから大人の方まで、幅広い年代の方が気軽に通えるヘアーサロンを目指しています。
+          「少し整えたい」「いつもの感じでお願いしたい」そんな日常のご相談にも、丁寧にお応えします。
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================
+         About Salon
+         既存の About Shop セクションを活かして内容のみ変更
+    ========================== -->
+    <section id="about" class="section section-light fade-section">
+      <div class="container split about-split">
+        <div class="about-image">
+          <img src="images/shop-about.jpg" alt="ヘアーサロンの店内イメージ">
+        </div>
+        <div class="about-copy">
+          <p class="section-label">ABOUT SALON</p>
+          <h2 class="section-title align-left">ほっと落ち着ける、家庭的なヘアーサロンです。</h2>
+          <p class="section-text align-left">
+            派手すぎず、肩の力を抜いて過ごせる店内づくりを大切にしています。
+            初めての方でも緊張しにくく、いつもの美容時間をゆったり楽しめる空間です。
+          </p>
+          <p class="section-text align-left">
+            お子さまのカット、学生さんのスタイルチェンジ、毎月のお手入れ、
+            大人世代の髪のお悩みまで、幅広いご相談に対応しています。
+          </p>
+          <p class="section-text align-left">
+            「長く通える美容室を探している」そんな方に選んでいただけるよう、
+            一人ひとりとの会話や空気感を大切にしています。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Features
+         カード構造はそのまま
+         テキストのみヘアーサロン向けに差し替え
+    ========================== -->
+    <section id="features" class="section section-accent fade-section">
+      <div class="container">
+        <p class="section-label">FEATURES</p>
+        <h2 class="section-title">このサロンならではの3つの魅力</h2>
+        <div class="feature-grid">
+          <article class="card feature-card hover-panel">
+            <div class="card-number">01</div>
+            <h3>一人ひとりに合わせた丁寧な対応</h3>
+            <p>髪質や普段のお手入れ、なりたい雰囲気をうかがいながら、無理のないスタイルをご提案します。</p>
+          </article>
+          <article class="card feature-card hover-panel">
+            <div class="card-number">02</div>
+            <h3>幅広い年代が通いやすい雰囲気</h3>
+            <p>小さなお子さまから大人の方まで、世代を問わず気軽に通いやすい家庭的な空気感を大切にしています。</p>
+          </article>
+          <article class="card feature-card hover-panel">
+            <div class="card-number">03</div>
+            <h3>暮らしになじむスタイルづくり</h3>
+            <p>特別な日だけでなく、毎日が少し心地よくなるような、扱いやすく自然なヘアスタイルを目指します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Stylist
+         OWNER セクションをスタイリスト紹介として流用
+         名前 + 一言プロフィールを残しつつ内容を変更
+    ========================== -->
+    <section id="owner" class="section section-light fade-section">
+      <div class="container split owner-split">
+        <div class="split-copy">
+          <p class="section-label">STYLIST</p>
+          <h2 class="section-title align-left">髪のお悩みを、気軽に話せる存在でありたい。</h2>
+          <p class="section-text align-left">
+            大きなサロンにはない距離感で、髪のお悩みや毎日の扱いやすさを一緒に考えます。
+            ご希望を大切にしながら、無理のない提案とていねいな施術を心がけています。
+          </p>
+          <ul class="point-list">
+            <li>髪質やクセに合わせたご提案</li>
+            <li>毎日のセットがしやすいスタイルづくり</li>
+            <li>ご家族で通いやすい、やわらかな接客</li>
+          </ul>
+        </div>
+
+        <div class="owner-panel">
+          <div class="owner-box">
+            <img src="images/owner.jpg" alt="スタイリストのイメージ写真" class="owner-photo">
+            <p class="owner-kicker">Stylist's Voice</p>
+            <p class="owner-name">オーナースタイリスト / やさしく寄り添うヘアデザイナー</p>
+            <p class="owner-one-line">その方らしさを大切にした、無理のないきれいをご提案します。</p>
+            <h3>「毎日鏡を見るのが少し楽しみになるように。」</h3>
+            <p>
+              髪型が変わると、気分も少し軽くなるもの。
+              そんな日常の小さなうれしさにつながるように、丁寧に施術しています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Menu
+         既存 ITEMS をメニュー紹介に変更
+         画像ファイル名は既存クラス名を活かしてそのまま使用
+    ========================== -->
+    
+
+<section id="items" class="section section-dark fade-section">
+  <div class="container">
+    <p class="section-label section-label-light">PRICE MENU</p>
+    <h2 class="section-title title-light">料金表</h2>
+
+    <!-- 左に写真、右に料金表 -->
+    <div class="menu-layout">
+      <div class="menu-photo-wrap">
+        <img src="images/menu-photo.jpg" alt="ヘアーサロンの店内イメージ" class="menu-photo">
+      </div>
+
+      <div class="menu-board salon-menu-board">
+        <div class="menu-group menu-cut">
+          <h3>Cut</h3>
+          <dl class="price-list">
+            <div><dt>カット</dt><dd>¥4,500</dd></div>
+            <div><dt>前髪カット</dt><dd>¥1,100</dd></div>
+            <div><dt>キッズカット</dt><dd>¥2,800</dd></div>
+          </dl>
+        </div>
+
+        <div class="menu-group menu-color">
+          <h3>Color</h3>
+          <dl class="price-list">
+            <div><dt>カラー</dt><dd>¥6,600〜</dd></div>
+            <div><dt>リタッチ</dt><dd>¥5,500〜</dd></div>
+            <div><dt>ハイライト</dt><dd>¥3,300〜</dd></div>
+          </dl>
+        </div>
+
+        <div class="menu-group menu-perm">
+          <h3>Perm</h3>
+          <dl class="price-list">
+            <div><dt>パーマ</dt><dd>¥7,700〜</dd></div>
+            <div><dt>ポイントパーマ</dt><dd>¥4,400〜</dd></div>
+            <div><dt>前髪パーマ</dt><dd>¥3,300〜</dd></div>
+          </dl>
+        </div>
+
+        <div class="menu-group menu-care">
+          <h3>Care</h3>
+          <dl class="price-list">
+            <div><dt>トリートメント</dt><dd>¥3,300〜</dd></div>
+            <div><dt>ヘッドスパ</dt><dd>¥4,400〜</dd></div>
+            <div><dt>炭酸ケア</dt><dd>¥1,650〜</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- =========================
+         Style Gallery
+         既存ギャラリーをヘアスタイル紹介に変更
+    ========================== -->
+    <section id="gallery" class="section section-light fade-section">
+      <div class="container">
+        <p class="section-label">STYLE GALLERY</p>
+        <h2 class="section-title">ヘアスタイルのイメージ</h2>
+        <p class="section-text gallery-lead">
+          ナチュラルでやわらかな雰囲気を中心に、毎日の暮らしになじみやすいヘアスタイルをイメージできるセクションです。
+        </p>
+        <div class="gallery-grid">
+          <figure class="gallery-card hover-panel"><img src="images/item-backpack.jpg" alt="カットスタイルのイメージ"><figcaption>ナチュラルカット</figcaption></figure>
+          <figure class="gallery-card hover-panel"><img src="images/item-wear.jpg" alt="カラーイメージ"><figcaption>やわらかカラー</figcaption></figure>
+          <figure class="gallery-card hover-panel"><img src="images/item-shoes.jpg" alt="トリートメントイメージ"><figcaption>うるおいケア</figcaption></figure>
+          <figure class="gallery-card hover-panel"><img src="images/item-gear.jpg" alt="ファミリー利用イメージ"><figcaption>家族で通える雰囲気</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Instagram
+         既存セクションを流用し文言のみ最小変更
+    ========================== -->
+    <section class="section section-instagram fade-section">
+      <div class="container instagram-box">
+        <div>
+          <p class="section-label">INSTAGRAM</p>
+          <h2 class="section-title align-left">お知らせやヘアスタイル、店内の雰囲気を発信中</h2>
+          <p class="section-text align-left">営業時間のお知らせや日々のスタイル例、サロンの空気感などをInstagramでもご案内できます。</p>
+        </div>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="instagram-btn" aria-label="Instagramを見る">
+          <span class="instagram-icon" aria-hidden="true"></span>
+          <span>Instagramを見る</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================
+         Access
+         地図埋め込みはそのまま活かし、説明だけ美容室向けに差し替え
+    ========================== -->
+    <section id="access" class="section section-light fade-section">
+      <div class="container split access-split">
+        <div class="split-copy">
+          <p class="section-label">ACCESS</p>
+          <h2 class="section-title align-left">いつもの暮らしの中で、気軽に立ち寄れる場所に。</h2>
+          <p class="section-text align-left">
+            お買い物のついでやお仕事帰りにも立ち寄りやすい、地域に根ざしたヘアーサロンです。
+            初めての方も、どうぞ気軽にお越しください。
+          </p>
+          <dl class="info-list">
+            <div><dt>店舗名</dt><dd>Atelier Hair</dd></div>
+            <div><dt>住所</dt><dd>〒000-0000 ○○県○○市○○1-2-3</dd></div>
+            <div><dt>営業時間</dt><dd>9:00 - 18:00</dd></div>
+            <div><dt>定休日</dt><dd>毎週月曜 / 第1・第3日曜 など</dd></div>
+            <div><dt>お問い合わせ</dt><dd>00-0000-0000</dd></div>
+            <div><dt>Instagram</dt><dd>@atelier_hair</dd></div>
+          </dl>
+        </div>
+        <div class="map-card">
+          <iframe src="https://www.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%A7%85&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map"></iframe>
+          <p class="map-note">※ 現在はダミー表示です。公開時は実店舗住所の地図に差し替えてください。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Atelier Hair</p>
+        <p class="footer-copy">家族みんなで通いやすい、やさしい美容室。</p>
+      </div>
+      <p class="copyright">© Atelier Hair</p>
+    </div>
+  </footer>
+
+  <!-- 既存の軽量JavaScriptを活かし、
+       フェードイン・スライダー・ドット・矢印・スワイプを維持 -->
+  <script>
+    const sections = document.querySelectorAll('.fade-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      });
+    }, { threshold: 0.18 });
+    sections.forEach((section) => observer.observe(section));
+
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.indicator');
+    const prevBtn = document.querySelector('.hero-arrow-prev');
+    const nextBtn = document.querySelector('.hero-arrow-next');
+    const hero = document.querySelector('.hero');
+    const totalSlides = slides.length;
+    const slideDuration = 8000;
+    let currentSlide = 0;
+    let autoTimer;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function showSlide(index) {
+      currentSlide = (index + totalSlides) % totalSlides;
+      slides.forEach((slide, i) => slide.classList.toggle('is-active', i === currentSlide));
+      dots.forEach((dot, i) => dot.classList.toggle('is-active', i === currentSlide));
+    }
+
+    function nextSlide() { showSlide(currentSlide + 1); }
+    function prevSlide() { showSlide(currentSlide - 1); }
+
+    function restartAutoPlay() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(nextSlide, slideDuration);
+    }
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        showSlide(index);
+        restartAutoPlay();
+      });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      restartAutoPlay();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      restartAutoPlay();
+    });
+
+    hero.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    hero.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchEndX - touchStartX;
+      if (Math.abs(diff) > 40) {
+        if (diff < 0) nextSlide();
+        else prevSlide();
+        restartAutoPlay();
+      }
+    }, { passive: true });
+
+    showSlide(0);
+    restartAutoPlay();
+  </script>
+
+  <script>
+    // =========================================
+    // アンカージャンプ位置補正
+    // 固定ヘッダーの高さを取得して、ジャンプ位置を補正
+    // =========================================
+    const siteHeader = document.querySelector('.site-header');
+
+    function updateHeaderOffset() {
+      if (!siteHeader) return;
+      const headerHeight = Math.ceil(siteHeader.getBoundingClientRect().height);
+      document.documentElement.style.setProperty('--header-offset', headerHeight + 'px');
+    }
+
+    function jumpWithHeaderOffset(targetId, smooth = true) {
+      const target = document.getElementById(targetId);
+      if (!target || !siteHeader) return;
+
+      const headerHeight = Math.ceil(siteHeader.getBoundingClientRect().height);
+      const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+      const offsetTop = targetTop - headerHeight;
+
+      window.scrollTo({
+        top: offsetTop,
+        behavior: smooth ? 'smooth' : 'auto'
+      });
+    }
+
+    // 初期化
+    updateHeaderOffset();
+    window.addEventListener('resize', updateHeaderOffset);
+    window.addEventListener('load', updateHeaderOffset);
+
+    // ナビゲーションなどのアンカーリンクをクリックしたときの補正
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const href = link.getAttribute('href');
+        if (!href || href === '#') return;
+
+        const targetId = href.slice(1);
+        const target = document.getElementById(targetId);
+        if (!target) return;
+
+        event.preventDefault();
+        updateHeaderOffset();
+        history.pushState(null, '', href);
+        jumpWithHeaderOffset(targetId, true);
+      });
+    });
+
+    // URLにハッシュがある状態で読み込まれたときも補正
+    window.addEventListener('load', () => {
+      if (window.location.hash) {
+        const targetId = window.location.hash.replace('#', '');
+        setTimeout(() => {
+          updateHeaderOffset();
+          jumpWithHeaderOffset(targetId, false);
+        }, 80);
+      }
+    });
+
+    // 戻る・進むでハッシュが変わったときも補正
+    window.addEventListener('hashchange', () => {
+      const targetId = window.location.hash.replace('#', '');
+      if (!targetId) return;
+      updateHeaderOffset();
+      jumpWithHeaderOffset(targetId, false);
+    });
+  </script>
+
+</body>
+</html>
