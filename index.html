@@ -28,11 +28,12 @@
       <nav class="site-nav" aria-label="ページ内ナビゲーション">
         <ul>
           <li><a href="#concept">CONCEPT</a></li>
-          <li><a href="#about">ABOUT SALON</a></li>
+          <li><a href="#about">ABOUT</a></li>
           <li><a href="#features">FEATURES</a></li>
           <li><a href="#owner">STYLIST</a></li>
           <li><a href="#items">MENU</a></li>
           <li><a href="#gallery">STYLE</a></li>
+          <li><a href="#instagram">INSTAGRAM</a></li>          
           <li><a href="#access">ACCESS</a></li>
         </ul>
       </nav>
@@ -70,7 +71,7 @@
           家庭的な雰囲気のなかで、幅広い年代の方が気軽に通えるヘアーサロン。<br>
           毎日の暮らしになじむ、扱いやすく心地よいヘアスタイルをご提案します。
         </p>
-        <div class="hero-actions">
+        <div class="hero-actions btn-layout">
           <a href="#items" class="btn btn-primary">メニューを見る</a>
           <a href="#access" class="btn btn-secondary">アクセス</a>
         </div>
@@ -202,57 +203,57 @@
     ========================== -->
     
 
-<section id="items" class="section section-dark fade-section">
-  <div class="container">
-    <p class="section-label section-label-light">PRICE MENU</p>
-    <h2 class="section-title title-light">料金表</h2>
+    <section id="items" class="section section-dark fade-section">
+      <div class="container">
+        <p class="section-label section-label-light">PRICE MENU</p>
+        <h2 class="section-title title-light">料金表</h2>
 
-    <!-- 左に写真、右に料金表 -->
-    <div class="menu-layout">
-      <div class="menu-photo-wrap">
-        <img src="images/menu-photo.jpg" alt="ヘアーサロンの店内イメージ" class="menu-photo">
+        <!-- 左に写真、右に料金表 -->
+        <div class="menu-layout">
+          <div class="menu-photo-wrap">
+            <img src="images/menu-photo.jpg" alt="ヘアーサロンの店内イメージ" class="menu-photo">
+          </div>
+
+          <div class="menu-board salon-menu-board">
+            <div class="menu-group menu-cut">
+              <h3>Cut</h3>
+              <dl class="price-list">
+                <div><dt>カット</dt><dd>¥4,500</dd></div>
+                <div><dt>前髪カット</dt><dd>¥1,100</dd></div>
+                <div><dt>キッズカット</dt><dd>¥2,800</dd></div>
+              </dl>
+            </div>
+
+            <div class="menu-group menu-color">
+              <h3>Color</h3>
+              <dl class="price-list">
+                <div><dt>カラー</dt><dd>¥6,600〜</dd></div>
+                <div><dt>リタッチ</dt><dd>¥5,500〜</dd></div>
+                <div><dt>ハイライト</dt><dd>¥3,300〜</dd></div>
+              </dl>
+            </div>
+
+            <div class="menu-group menu-perm">
+              <h3>Perm</h3>
+              <dl class="price-list">
+                <div><dt>パーマ</dt><dd>¥7,700〜</dd></div>
+                <div><dt>ポイントパーマ</dt><dd>¥4,400〜</dd></div>
+                <div><dt>前髪パーマ</dt><dd>¥3,300〜</dd></div>
+              </dl>
+            </div>
+
+            <div class="menu-group menu-care">
+              <h3>Care</h3>
+              <dl class="price-list">
+                <div><dt>トリートメント</dt><dd>¥3,300〜</dd></div>
+                <div><dt>ヘッドスパ</dt><dd>¥4,400〜</dd></div>
+                <div><dt>炭酸ケア</dt><dd>¥1,650〜</dd></div>
+              </dl>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="menu-board salon-menu-board">
-        <div class="menu-group menu-cut">
-          <h3>Cut</h3>
-          <dl class="price-list">
-            <div><dt>カット</dt><dd>¥4,500</dd></div>
-            <div><dt>前髪カット</dt><dd>¥1,100</dd></div>
-            <div><dt>キッズカット</dt><dd>¥2,800</dd></div>
-          </dl>
-        </div>
-
-        <div class="menu-group menu-color">
-          <h3>Color</h3>
-          <dl class="price-list">
-            <div><dt>カラー</dt><dd>¥6,600〜</dd></div>
-            <div><dt>リタッチ</dt><dd>¥5,500〜</dd></div>
-            <div><dt>ハイライト</dt><dd>¥3,300〜</dd></div>
-          </dl>
-        </div>
-
-        <div class="menu-group menu-perm">
-          <h3>Perm</h3>
-          <dl class="price-list">
-            <div><dt>パーマ</dt><dd>¥7,700〜</dd></div>
-            <div><dt>ポイントパーマ</dt><dd>¥4,400〜</dd></div>
-            <div><dt>前髪パーマ</dt><dd>¥3,300〜</dd></div>
-          </dl>
-        </div>
-
-        <div class="menu-group menu-care">
-          <h3>Care</h3>
-          <dl class="price-list">
-            <div><dt>トリートメント</dt><dd>¥3,300〜</dd></div>
-            <div><dt>ヘッドスパ</dt><dd>¥4,400〜</dd></div>
-            <div><dt>炭酸ケア</dt><dd>¥1,650〜</dd></div>
-          </dl>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
@@ -280,17 +281,21 @@
          Instagram
          既存セクションを流用し文言のみ最小変更
     ========================== -->
-    <section class="section section-instagram fade-section">
-      <div class="container instagram-box">
+    <section id="instagram" class="section section-instagram fade-section">
+      <div class="container"> 
+          <!-- <div class="container instagram-box"> -->
         <div>
           <p class="section-label">INSTAGRAM</p>
           <h2 class="section-title align-left">お知らせやヘアスタイル、店内の雰囲気を発信中</h2>
           <p class="section-text align-left">営業時間のお知らせや日々のスタイル例、サロンの空気感などをInstagramでもご案内できます。</p>
         </div>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="instagram-btn" aria-label="Instagramを見る">
-          <span class="instagram-icon" aria-hidden="true"></span>
-          <span>Instagramを見る</span>
-        </a>
+        <div class="btn-layout">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn instagram-btn"  aria-label="Instagramを見る">
+            <span class="instagram-icon" aria-hidden="true"></span>
+            <span>Instagramを見る</span>
+          </a>
+        </div>
+
       </div>
     </section>
 
@@ -406,7 +411,256 @@
     restartAutoPlay();
   </script>
 
+
   <script>
+    // =========================================
+    // アンカージャンプ位置補正
+    // 読み込み直後でもヘッダー高さの変動を吸収して、
+    // セクション上端がヘッダー下にぴったり来るようにする
+    // =========================================
+
+    const siteHeader = document.querySelector('.site-header');
+
+      function getHeaderHeight(){
+        return siteHeader ? Math.ceil(siteHeader.offsetHeight) : 0;
+      }
+
+      function updateHeaderOffset(){
+        document.documentElement.style.setProperty(
+          '--header-offset',
+          `${getHeaderHeight()}px`
+        );
+      }
+
+      function getLayoutTop(element){
+        let top = 0;
+        let current = element;
+
+        while(current){
+          top += current.offsetTop || 0;
+          current = current.offsetParent;
+        }
+
+        return top;
+      }
+
+      function scrollToTarget(target, smooth = true){
+        if(!target) return;
+
+        updateHeaderOffset();
+
+        if(target.id === 'top'){
+          window.scrollTo({
+            top: 0,
+            behavior: smooth ? 'smooth' : 'auto'
+          });
+          return;
+        }
+
+        const headerHeight = getHeaderHeight();
+
+        /*
+          sectionの上端を基準にする。
+          これでヘッダー下端 = sectionのpadding開始位置になる。
+          getBoundingClientRect()はtransformの影響を受けるので使わない。
+        */
+        const targetTop = getLayoutTop(target);
+        const scrollTop = Math.max(0, targetTop - headerHeight);
+
+        window.scrollTo({
+          top: scrollTop,
+          behavior: smooth ? 'smooth' : 'auto'
+        });
+      }
+
+      function fixScrollAfterJump(target){
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            scrollToTarget(target, false);
+          });
+        });
+
+        setTimeout(() => {
+          scrollToTarget(target, false);
+        }, 250);
+
+        setTimeout(() => {
+          scrollToTarget(target, false);
+        }, 600);
+      }
+
+      updateHeaderOffset();
+
+      window.addEventListener('load', () => {
+        updateHeaderOffset();
+
+        if(location.hash){
+          const target = document.querySelector(location.hash);
+          if(target){
+            scrollToTarget(target, false);
+            fixScrollAfterJump(target);
+          }
+        }
+      });
+
+      window.addEventListener('resize', updateHeaderOffset);
+      window.addEventListener('orientationchange', updateHeaderOffset);
+
+      if('ResizeObserver' in window && siteHeader){
+        new ResizeObserver(updateHeaderOffset).observe(siteHeader);
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          const href = link.getAttribute('href');
+          if(!href || href === '#') return;
+
+          const target = document.querySelector(href);
+          if(!target) return;
+
+          e.preventDefault();
+
+          history.pushState(null, '', href);
+
+          scrollToTarget(target, true);
+          fixScrollAfterJump(target);
+        });
+      });
+
+      window.addEventListener('hashchange', () => {
+        if(!location.hash) return;
+
+        const target = document.querySelector(location.hash);
+        if(!target) return;
+
+        scrollToTarget(target, false);
+        fixScrollAfterJump(target);
+      });
+
+
+    // const siteHeader = document.querySelector('.site-header');
+    // const root = document.documentElement;
+
+    // function getHeaderHeight(){
+    // return siteHeader ? Math.ceil(siteHeader.offsetHeight) : 0;
+    // }
+
+    // function updateHeaderOffset(){
+    // root.style.setProperty('--header-offset', `${getHeaderHeight()}px`);
+    // }
+
+    // function getSectionPaddingTop(target){
+    // return parseFloat(getComputedStyle(target).paddingTop) || 0;
+    // }
+
+    // function getLayoutTop(target){
+    // let top = 0;
+    // let el = target;
+
+    // while(el){
+    // top += el.offsetTop || 0;
+    // el = el.offsetParent;
+    // }
+
+    // return top;
+    // }
+
+    // function scrollToSection(target, smooth = true){
+    // if(!target) return;
+
+    // updateHeaderOffset();
+
+    // if(target.id === 'top'){
+    // window.scrollTo({
+    // top: 0,
+    // behavior: smooth ? 'smooth' : 'auto'
+    // });
+    // return;
+    // }
+
+    // const headerHeight = getHeaderHeight();
+
+    // /*
+    // sectionの上端からスクロールする。
+    // これにより、ヘッダー下端が常にsectionのpadding開始位置に合う。
+    // getBoundingClientRect()はfade-sectionのtransformの影響を受けるため使わない。
+    // */
+    // const sectionTop = getLayoutTop(target);
+    // const scrollTop = Math.max(0, sectionTop - headerHeight);
+
+    // window.scrollTo({
+    // top: scrollTop,
+    // behavior: smooth ? 'smooth' : 'auto'
+    // });
+    // }
+
+    // function stabilizeScroll(target){
+    // requestAnimationFrame(() => {
+    // requestAnimationFrame(() => {
+    // scrollToSection(target, false);
+    // });
+    // });
+
+    // setTimeout(() => {
+    // scrollToSection(target, false);
+    // }, 250);
+
+    // setTimeout(() => {
+    // scrollToSection(target, false);
+    // }, 600);
+    // }
+
+    // updateHeaderOffset();
+
+    // window.addEventListener('load', () => {
+    // updateHeaderOffset();
+
+    // if(window.location.hash){
+    // const target = document.querySelector(window.location.hash);
+    // if(target){
+    // scrollToSection(target, false);
+    // stabilizeScroll(target);
+    // }
+    // }
+    // });
+
+    // window.addEventListener('resize', updateHeaderOffset);
+    // window.addEventListener('orientationchange', updateHeaderOffset);
+
+    // if('ResizeObserver' in window && siteHeader){
+    // new ResizeObserver(updateHeaderOffset).observe(siteHeader);
+    // }
+
+    // document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    // link.addEventListener('click', (event) => {
+    // const href = link.getAttribute('href');
+    // if(!href || href === '#') return;
+
+    // const target = document.querySelector(href);
+    // if(!target) return;
+
+    // event.preventDefault();
+    // history.pushState(null, '', href);
+
+    // scrollToSection(target, true);
+    // stabilizeScroll(target);
+    // });
+    // });
+
+    // window.addEventListener('hashchange', () => {
+    // if(!window.location.hash) return;
+
+    // const target = document.querySelector(window.location.hash);
+    // if(!target) return;
+
+    // scrollToSection(target, false);
+    // stabilizeScroll(target);
+    // });
+
+  </script>
+
+
+  <!-- <script>
     // =========================================
     // アンカージャンプ位置補正
     // 固定ヘッダーの高さを取得して、ジャンプ位置を補正
@@ -473,7 +727,7 @@
       updateHeaderOffset();
       jumpWithHeaderOffset(targetId, false);
     });
-  </script>
+  </script> -->
 
 </body>
 </html>
