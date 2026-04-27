@@ -282,8 +282,11 @@ figure{margin:0}
 }
 .owner-photo{
   width:100%;
-  aspect-ratio:4/4.6;
-  object-fit:contain;
+  /* aspect-ratio:4/4.6;
+  object-fit:contain; */
+    aspect-ratio:1/1;
+  object-fit:cover;
+  object-position: center top 40%;
   border-radius:20px;
   margin-bottom:18px;
   border:2px solid rgba(255,255,255,.18);
